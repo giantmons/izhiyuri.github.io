@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/c4583d5125.js" crossorigin="anonymous"></script>
+    <title>Document</title>
+</head>
+
+<body>
+
+    <div class="container">
+        <div class="heart" onclick="togglePopup()"></div>
+    </div>
+
+    <div class="wrapper">
+        <div class="popup" id="popup-1">
+            <div class="overlay" onclick="togglePopup()"></div>
+            <div class="content">
+                <div class="bg">
+                    <br><br><br><img src="img/val.gif">
+                    <p><span>Happy Valentine's Day, Yuri!</span> We've only met recently, pero I already lost count
+                        of how happy you've made me :)))
+                    </p>
+                    <a href="flowers.html"><button><i class="fa-solid fa-wand-sparkles"></i></button></a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <script>
+        function togglePopup() {
+            document.getElementById("popup-1").classList.toggle("active");
+        }
+    </script>
+
+</body>
+
+</html>
